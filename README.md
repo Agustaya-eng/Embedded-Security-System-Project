@@ -23,13 +23,14 @@ Through this project, I gained hands-on experience with microcontroller programm
 - Designing control logic suitable for real-time embedded systems
 
 ## How It Could Be Improved
-The current implementation uses polling to monitor the PIR sensor. A key improvement would be transitioning to an interrupt-driven design, which would:
+The current implementation uses polling to monitor the PIR sensor. A major improvement would be transitioning to an interrupt-driven design, which would:
 
 - Reduce unnecessary CPU usage
 
 - Improve system responsiveness
 
 - Lower overall power consumption
+
 Some additional enhancements could include: power-saving sleep modes, allowing the user to select a unique password instead of giving them a predetermiend one, or expanding the unlock logic to support more complex state handling.
 
 ## Video
