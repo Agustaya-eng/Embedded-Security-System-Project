@@ -5,11 +5,11 @@ The purpose of this project is to design and implement a small embedded security
 using the TM4C123 LaunchPad and Grove sensors. The system resembles a basic home 
 or room alarm that detects motion when locked and activates an alarm if an intruder is 
 detected. Users can lock and unlock the system using a custom binary code entered 
-through a pushbutton. The goal is to combine input sensors, timers, PWM control, and 
+through a pushbutton. The goal is to combine input sensors, GPIO functions, output sensors and 
 display output into a meaningful real-world embedded system.
 
 ## How I built it
-This project was developed using Code Composer Studio (CCS) and programmed for a TI Tiva C microcontroller. The system integrates a PIR motion sensor, buzzer, and seven-segment display, all interfaced through the microcontroller’s GPIO ports. The firmware was written primarily in C, with select ARM assembly used for simple non-leaf functions, reinforcing low-level control and calling conventions.
+This project was developed using Code Composer Studio (CCS) and programmed for a TI Tiva C microcontroller. The system integrates a PIR motion sensor, buzzer, and seven-segment display, all interfaced through the microcontroller’s GPIO ports. The firmware was written primarily in C, with ARM assembly used for simpler non-leaf functions.
 
 ## What I Learned
 Through this project, I gained hands-on experience with microcontroller programming, including:
@@ -30,7 +30,7 @@ The current implementation uses polling to monitor the PIR sensor. A key improve
 - Improve system responsiveness
 
 - Lower overall power consumption
-Additional enhancements could include: power-saving sleep modes, allowing the user to select a unique password instead of giving them a predetermiend one, or expanding the unlock logic to support more complex state handling.
+Some additional enhancements could include: power-saving sleep modes, allowing the user to select a unique password instead of giving them a predetermiend one, or expanding the unlock logic to support more complex state handling.
 
-## video
+## Video
 [Video Demonstration](https://drive.google.com/file/d/1nr90QWSlokFpup-CDFcgp4HEFQfnzJyF/view?usp=sharing)
